@@ -1,70 +1,66 @@
-# Button Blitz
+# Button Blitz: EC327 Final Project
+## **Overview**
+**Button Blitz** is a web-based game developed as part of a collaborative team project for the EC327 course. The game challenges players to click a button to earn points and unlock cosmetic upgrades while enjoying two engaging gameplay modes. With its vibrant visuals, humorous themes, and responsive design, Button Blitz provides a simple yet addictive gaming experience.
+## **Features**
+### **Gameplay Modes**
+- **Classic Mode**:  
+  A straightforward challenge where players aim to accumulate as many points as possible through rapid clicking.
+- **Whack-a-Mole Mode**:  
+  A dynamic and challenging mode where the button moves across the screen, testing players' reflexes and accuracy.
+### **Cosmetic Upgrades**
+- Spend points to personalize the game environment:
+  - **Button Images**: Transform the button into fun depictions of course staff.
+  - **Background Colors**: Customize the background to suit your preferences.
+### **Engaging Visuals and Animations**
+- Floating points and animations add dynamic feedback to every click.
+- A bonus multiplier mode introduces visually distinct gameplay enhancements.
 
-## Project Category
-Animated Game
+### **Responsive Design**
+- Fully optimized for different devices and screen sizes using Flexbox, ensuring consistent performance and visual appeal.
+  
+## **Installation and Setup**
+1. **Clone the repository**:
+   '''bash
+   git clone <repository-url>
+   ''' 
+2. **Navigate to the project directory**:
+   '''bash
+   cd ButtonBlitz
+   '''  
+3. **Open the `index.html` file in your browser**:
+   '''bash
+   open index.html
+   '''
+   
+## **How to Play**
+1. Start clicking the main button to earn points.
+2. Use your points to purchase cosmetic upgrades, such as:
+   - Background color changes.
+   - Custom button images featuring course staff.
+3. Explore two modes:
+   - **Classic Mode** for straightforward clicking fun.
+   - **Whack-a-Mole Mode** for a fast-paced challenge.
+     
+## **Team Members**
+- **Jeremiah Sakuda**  
+- **Salome Mokuwa**
+- **Ngoye Diop**
+- **Tahira Smith**
+  
+## **Technologies Used**
+- **HTML5, CSS3, JavaScript**: Core web technologies for game development.
+- **Figma**: For initial UI/UX prototyping and design.
 
-## Project Type
-Web App
-
-## Project Description
-A fun, engaging web game where players press a button to score points, unlock upgrades, and improve focus. Great for people with ADHD!
-
-## Group Members
-Each group member should add their name here after accepting the invite:
-- **Member 1**: Jeremiah Somoine
-- **Member 2**: Salome Mokuwa
-- **Member 3**: Krista Smith
-- **Member 4**: Ngoye Diop
-- **Member 5**: Tahira Smith
-
-## Role Assignments
-
-| Name      | Project Lead | Front End | Back End (Role 1) | Documenter | Tester | Total |
-|-----------|--------------|-----------|-------------------|------------|--------|-------|
-| Salome    | 50           | 25        | 0                 | 0          | 25     | 100   |
-| Tahira    | 0            | 0         | 50                | 25         | 25     | 100   |
-| Jeremiah  | 50           | 25        | 25                | 0          | 0      | 100   |
-| Ngoye     | 0            | 50        | 0                 | 25         | 25     | 100   |
-| Krista    | 0            | 0         | 25                | 50         | 25     | 100   |
-| **Total** | **100**      | **100**   | **100**           | **100**    | **100**| **100** |
+  
+## **Team Contributions**
+This project was developed collaboratively by a team of four as part of our EC327 course. Each team member contributed to the design, functionality, and testing of Button Blitz.
 
 
-## Issue Status
-Issue 6 has been completed. The new Issue and mielstone have been made.
+## **Acknowledgments**
+We would like to thank the EC327 course staff for their guidance and support throughout this project. The use of course-related imagery in the game adds a unique and humorous touch that aligns with the spirit of the course.
 
-## CI/CD Pipeline
-
-This project uses GitLab CI/CD to validate HTML and CSS files on every push to the repository.
-
-### Pipeline Overview
-1. **HTML Validation**: Ensures `index.html` adheres to web standards.
-2. **CSS Validation**: Ensures `styles.css` follows best practices.
-
-### Configuration
-The `.gitlab-ci.yml` file defines the pipeline:
-```yaml
-stages:
-  - test
-
-validate-html:
-  stage: test
-  image: node:14
-  script:
-    - npm install -g htmlhint
-    - htmlhint index.html
-```
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://agile.bu.edu/gitlab/ec327/projects/group10project.git
-git branch -M master
-git push -uf origin master
-```
+## **License**
+This project is for educational purposes only and is not intended for commercial use.
 
 
 
