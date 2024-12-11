@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Blitz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="defaultBackground"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <img class="header-icon" src="images/buttonblitzicon.png" alt="Game Icon">
+        <div class="score-container">
+            <h1 class="points_text">   Points: <span id="points">0</span></h1>
+            <h2> High Score: <span id="highScore">0</span></h2>
+        </div>
+        <img id="upgradesButton" class="upgrades-img" src="images/upgradesbutton.png" alt="Upgrades Button">
+    </div>
+
+    <!-- First Page -->
+    <div id="firstPage" class="page background">
+        <div class="black-box"></div>
+        <div class="green-box"></div>
+        
+        <!-- Centered Content Container -->
+        <div class="firstPageContent">
+            <img class="placeholder1-img" src="images/buttonblitzicon.png" alt="Game Icon">
+            <h1 class="welcome-text">Welcome to Button Blitz!</h1>
+            <img id="playButton1" class="play1-img" src="images/playbutton1.png" alt="Play Button 1">
+        </div>
+    </div>
+
+    <!-- Second Page -->
+    <div id="secondPage" class="page background center hidden with-header">
+        <div class="main-content">
+            <img id="mainButton" class="button-img" src="images/mainbutton.png" alt="Main Button">
+            <img id="settingsButton" class="settingsbutton-img" src="images/settingsbutton.png" alt="Settings Button">
+        </div>
+        <div id="floatingContainer"></div> <!-- Container for floating +1s -->
+        <button class="moving-button" id="movingButton">Bonus!</button>
+        
+        <!-- Footer with Clear High Score and Instructions Buttons -->
+        <footer class="page-footer">
+            <img id="instructionsButton" class="instructions-img" src="images/instructions.png" alt="Instructions Button" title="View Instructions">
+        </footer>
+    </div>
+
+    <!-- Third Page -->
+    <div id="thirdPage" class="page background center hidden with-header">
+        <img id="buttonPics" class="buttonpics-img" src="images/buttonpics.png" alt="Button Pics">
+        <img id="backgroundsButton" class="backgroundsbutton-img" src="images/backgroundsbutton.png" alt="Backgrounds Button">
+    </div>
+
+    <!-- Fourth Page (for button pics) -->
+    <div id="fourthPage" class="page background center hidden with-header">
+        <img id="buttonpic1" class="buttonpic1-img" src="images/buttonpic1.png" alt="Button Pic 1">
+        <img id="buttonpic2" class="buttonpic2-img" src="images/buttonpic2.png" alt="Button Pic 2">
+        <img id="buttonpic3" class="buttonpic3-img" src="images/buttonpic3.png" alt="Button Pic 3">
+        <img id="default1" class="default1-img" src="images/default1.png" alt="Default 1">
+    </div>
+
+    <!-- Fifth Page (for background colors) -->
+    <div id="fifthPage" class="page background center hidden with-header">
+        <img id="backgroundPic1" class="backgroundpic1-img" src="images/background1.png" alt="Background Pic 1">
+        <img id="backgroundPic2" class="backgroundpic2-img" src="images/background2.png" alt="Background Pic 2">
+        <img id="backgroundPic3" class="backgroundpic3-img" src="images/background3.png" alt="Background Pic 3">
+        <img id="default2" class="default2-img" src="images/default2.png" alt="Default 2">
+    </div>
+
+    <!-- Instructions Page -->
+    <div id="instructionsPage" class="page background center hidden with-header">
+        <h1 class="instructions-title">Instructions:</h1>
+        <h1 class="instructions-text1">1. Start Clicking!
+            Click the big button on the screen to earn points.
+            Each click adds one point, or more, if you figure out the cheat code ;)
+            Don't forget to click the bonus button for extra points!
+            For a fun challenge, toggle the whack mode! This will move the button in random places. How fast can you click?</h1>
+        <h1 class="instructions-text2">2. Buy Upgrades!
+            Use your points to purchase items like
+            backgrounds to change the scenery of your button, or
+            buttons to change the picture on the button.</h1>
+        <img id="playButton2" class="play2-img" src="images/playbutton2.png" alt="Play Button 2">
+        <!-- Back Button -->
+        <button id="backFromInstructions" class="back-button">Back</button>
+    </div>
+
+    <!-- Settings Page -->
+    <div id="settingsPage" class="page background center hidden with-header">
+        <button id="toggleWhackModeButton" class="toggle-whack-mode-button">Toggle Whack Mode</button>
+        <button id="clearCacheButton" class="clear-cache-button">Clear High Score</button>
+        <img id="backButton4" class="backbutton4-img" src="images/backbutton4.png" alt="Back Button 4">
+    </div>
+    <!-- Audio -->
+    <audio id="button-sound" src="audio/popy.mp3"></audio>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>
+
